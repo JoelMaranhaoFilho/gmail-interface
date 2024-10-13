@@ -2,10 +2,9 @@
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
     "strict": true,
+    "baseUrl": "./src", // Define a raiz como a pasta src
     "paths": {
-      "@/*": [
-        "./*"
-      ]
+      "@/*": ["*"] // Ajustado para que o alias @ aponte diretamente para src
     }
   },
   "include": [
